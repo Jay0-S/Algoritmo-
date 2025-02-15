@@ -32,7 +32,7 @@ switch (true) {
 }
 
 //saída
-console.log('O Herói ' + nome + ' está no nível ' + nivel);
+console.log(`O Herói ${nome} está no nível ${nivel}`);
 
 //-------------------------------------------------------------------------------------
 
