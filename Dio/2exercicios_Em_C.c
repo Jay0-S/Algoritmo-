@@ -1,0 +1,49 @@
+#include <stdio.h>
+float fahrenheit(float c);
+void intro();
+int main()
+{
+    
+float x;
+
+intro();
+printf("Digite a Temperatura em Celsius: ");
+scanf("%f",&x);
+printf("\nTemperatura em Fahrenheit: %.2f",fahrenheit(x));
+
+    return 0;
+}
+
+float fahrenheit(float c){
+  float f = (9*c)/5+32;
+    return f ;
+}
+void intro(){
+ printf("****************************** \n");
+ printf("***conversor de temperatura C/F***\n");
+ printf("******************************\n");
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+char nome[20];
+int horas;
+float valor;
+
+printf("Digite o nome: ");
+scanf("%s", nome);
+printf("\nhoras trabalhadas: ");
+scanf("%d",&horas);
+printf("\nValor por hora: ");
+scanf("%f",&valor);
+
+printf("--- RESULTADO ---\n");
+printf("Funcionário: %s\n",nome);
+printf("Salário total: R$ %.2f", valor*horas);
+
+    return 0;
+}
